@@ -1,0 +1,35 @@
+{ 
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(gdb) Bash on Windows Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "/mnt/e/workspace/c-family/learn/a.out",
+            "args": ["80 < input"],
+            "stopAtEntry": false,
+            "miDebuggerArgs": "",
+            "cwd": "/mnt/e/workspace/c-family/learn/",
+            "environment": [],
+            "externalConsole": false,
+            "sourceFileMap": {
+                "/mnt/e/": "E:\\"
+            },
+            "pipeTransport": {
+                "debuggerPath": "/usr/bin/gdb",
+                "pipeProgram": "${env:windir}\\system32\\bash.exe",
+                "pipeArgs": [
+                    "-c"
+                ],
+                "pipeCwd": ""
+            },
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+    ]
+}
