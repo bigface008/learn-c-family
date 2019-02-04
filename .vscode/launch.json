@@ -1,4 +1,4 @@
-{ 
+{
     "version": "0.2.0",
     "configurations": [
         {
@@ -6,8 +6,10 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "/mnt/e/workspace/c-family/learn/a.out",
-            "args": ["80 < input"],
-            "stopAtEntry": false,
+            "args": [
+                " < input.log"
+            ],
+            "stopAtEntry": true,
             "miDebuggerArgs": "",
             "cwd": "/mnt/e/workspace/c-family/learn/",
             "environment": [],
@@ -29,7 +31,12 @@
                     "text": "-enable-pretty-printing",
                     "ignoreFailures": true
                 }
-            ]
+            ],
+            "logging": {
+                "engineLogging": true,
+                "trace": true,
+                "traceResponse": true
+            }
         },
     ]
 }
