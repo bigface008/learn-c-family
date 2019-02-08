@@ -5,17 +5,18 @@
             "name": "(gdb) Bash on Windows Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "/mnt/e/workspace/c-family/learn/a.out",
+            "program": "/mnt/d/workspace/learn-c-family/a.out",
             "args": [
-                " < input.log"
+                "<",
+                "input.log"
             ],
             "stopAtEntry": true,
             "miDebuggerArgs": "",
-            "cwd": "/mnt/e/workspace/c-family/learn/",
+            "cwd": "/mnt/d/workspace/learn-c-family/",
             "environment": [],
             "externalConsole": false,
             "sourceFileMap": {
-                "/mnt/e/": "E:\\"
+                "/mnt/d/": "D:\\"
             },
             "pipeTransport": {
                 "debuggerPath": "/usr/bin/gdb",
@@ -32,11 +33,11 @@
                     "ignoreFailures": true
                 }
             ],
-            "logging": {
-                "engineLogging": true,
-                "trace": true,
-                "traceResponse": true
-            }
+            // "logging": {
+            //     "engineLogging": true,
+            //     "trace": true,
+            //     "traceResponse": true
+            // }
         },
     ]
 }
