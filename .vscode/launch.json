@@ -33,11 +33,11 @@
                     "ignoreFailures": true
                 }
             ],
-            // "logging": {
-            //     "engineLogging": true,
-            //     "trace": true,
-            //     "traceResponse": true
-            // }
-        },
+            "logging": {
+                "engineLogging": true,
+                "trace": true,
+                "traceResponse": true
+            }
+        }
     ]
 }
